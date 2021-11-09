@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 11 tasks</title>
+    <style>
+        #div {
+            width: 33rem;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        #name {
+            display: flex;
+        }
+        .name {
+            border: none;
+        }
+        #fname, #lname {
+            border-bottom: 1px solid black;
+            margin-right: 10px;
+        }
+        #det {
+            display: flex;
+        }
+        .det {
+            border: none;
+        }
+        #city, #state, #zip {
+            border-bottom: 1px solid black;
+            margin-right: 7px;
+        }
+        h4 {
+            background-color: red;
+            color: white;
+        }
+        #opt {
+            display: flex;
+        }
+        table,
+        th,
+        td {
+            padding: 5px;
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Design a contact us form with all fields as required.</h2>
+        <form>
+            <h3>Send us a message</h3>
+            <label for="fname">First name</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter first name"><br><br>
+            <label for="lname">Last name</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Enter last name"><br><br>
+            <label for="email">Email address</label><br>
+            <input type="text" id="email" name="email" placeholder="Enter your email"><br><br>
+            <label for="comment">Enter your message below</label><br>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea><br><br>
+          <button>Submit</button>
+        </form>
+        <div>
+            <h3>Our Info</h3>
+            <p>Contact No: 1234567890</p>
+            <p>Email: contactus@heaven.com</p>
+            <p>address: 25, heaven street, heaven.</p>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <h2>Create an element that helps you to open the https://google.com in separate new tab.</h2>
+        <a href="https://www.google.com/" target="_blank">Google</a>
+    </div>
+    <hr>
+    <div>
+        <h2>In the form, add two radio buttons with grouping them for employee type(Salaried and own business)</h2>
+        <h3>Select one</h3>
+        <div>
+            <input type="radio" name="select">Salaried</input>
+            <input type="radio" name="select">Own Business</input>
+        </div>
+    </div>
+    <hr>
+    
+    <div>
+        <h2>Design form shown in the link (http://evc-cit.info/cit040/formguide/card_0.png)</h2>
+        <div id="div">
+            <h4>Yes! I want to subscribe to Mag-O-Zine</h4>
+            <div id="name">
+                <div>
+                    <input class="name" type="text" id="fname" name="fname" placeholder="Enter first name"><br>
+                    <label for="lname">First name</label><br>
+                </div>
+                <div>
+                    <input class="name" type="text" id="lname" name="lname" placeholder="Enter last name"><br>
+                    <label for="fname">Last name</label>
+                </div>
+            </div><br>
+            <div id="det">
+                <div>
+                    <input class="det" type="text" id="city" name="fname" placeholder="Enter first name"><br>
+                    <label for="city">City</label><br>
+                </div>
+                <div>
+                    <input class="det" type="text" id="state" name="lname" placeholder="Enter last name"><br>
+                    <label for="state">State</label>
+                </div>
+                <div>
+                    <input class="det" type="text" id="zip" name="lname" placeholder="Enter last name"><br>
+                    <label for="zip">zip</label>
+                </div>
+            </div><br>
+            <div id="opt">
+                Subscribe for: 
+                <input type="radio" name="select">1 Year($19.95)</input>
+                <input type="radio" name="select">2 Years($35.00)</input>
+            </div>
+            <div id="inf">
+                <p>Send me more info about: </p>
+                <input type="checkbox" name="select">Computer-Zine</input><br>
+                <input type="checkbox" name="select">Fishing-Zine</input><br>
+                <input type="checkbox" name="select">Cat-O-Zine</input><br>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <h2>Use the table tag to design given image</h2>
+        <table>
+            <tr>
+                <th>State of health</th>
+                <th colspan="2">Fasting Value</th>
+                <th>After Remaining</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Minimum</td>
+                <td>Normal</td>
+                <td>2 hours of Eating</td>
+            </tr>
+            <tr>
+                <td>healthy</td>
+                <td>70</td>
+                <td>100</td>
+                <td>Less than 140</td>
+            </tr>
+            <tr>
+                <td>Pre-Diabetes</td>
+                <td>101</td>
+                <td>126</td>
+                <td>140 - 126</td>
+            </tr>
+            <tr>
+                <td>Diabetes</td>
+                <td>more than 126</td>
+                <td>Not Applicable</td>
+                <td>More than 200</td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <div>
+        <h2>Write HTML input tags snippet to show default values for all Form elements.</h2>
+        <form>
+            <h3>Send us a message</h3>
+            <label for="fname">First name</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter first name" value="Lokesh"><br><br>
+            <label for="lname">Last name</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Enter last name" value="Kanna"><br><br>
+            <label for="email">Email address</label><br>
+            <input type="text" id="email" name="email" placeholder="Enter your email" value="lk@gmail.com"><br><br>
+            <label for="comment">Enter your message below</label><br>
+            <textarea name="comment" id="comment" cols="30" rows="10" >Good comment...</textarea><br><br>
+          <button>Submit</button>
+        </form>
+    </div>
+    <hr>
+    <div>
+        <h2>In your, HTML page add the below line and Highlight it without using any CSS. "HTML & CSS is awesome"</h2>
+        <p><mark>HTML & CSS is awesome</mark></p>
+    </div>
+    <hr>
+    <div>
+        <h2>Create an HTML page, which should contain all types of input elements.</h2>
+        <p>Types Of input elements</p>
+        <label for="text">Text element</label>
+        <input id="text" type="text" placeholder="Text element"><br>
+        <label for="radio">radio element</label>
+        <input id="radio" type="radio" ><br>
+        <label for="checkbox">checkbox element</label>
+        <input id="checkbox" type="checkbox"><br>
+        <input type="date"><br>
+        <label for="email">email element</label>
+        <input id="email" type="email"><br>
+        <label for="file">file element</label>
+        <input id="file" type="file"><br>
+        <label for="img">image element</label>
+        <input id="img" type="image"><br>
+        <label for="pass">Password element</label>
+        <input id="pass" type="password"><br>
+        <label for="num">Number element</label>
+        <input id="num" type="number"><br>
+        <label for="ran">Range element</label>
+        <input id="ran" type="range"><br>
+        <label for="ser">Search element</label>
+        <input id="ser" type="Search"><br>
+        <label for="tim">Time element</label>
+        <input id="tim" type="time"><br>
+        <label for="url">URL element</label>
+        <input id="url" type="url"><br>
+    </div>
+</body>
+</html>
